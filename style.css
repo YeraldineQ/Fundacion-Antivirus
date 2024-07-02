@@ -46,3 +46,17 @@ color: #222d56;
     justify-content: center;
   
 }
+
+.card-text{
+    color: white;
+
+}
+
+.image-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
