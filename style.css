@@ -5,3 +5,80 @@
 
     
 }
+
+/*Tatiana Carrusel 1*/
+
+
+.containert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: auto;
+    position: relative;
+    background-image: url('img/gallery/Javi\ 2.jpg'); /* Imagen de fondo */
+    background-size: 19%; /* Ajusta el tamaño de la imagen de fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: top;
+    box-sizing: border-box;
+}
+
+
+
+#carruselt {
+    width: 905gir px;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+    margin-top: 20px; /* Incrementar el margen superior */
+    margin-bottom: 20px;
+}
+
+#carruselt .left-arrow {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -9px;
+}
+
+#carruselt .right-arrow {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -9px;
+}
+
+.carruselt {
+    width: 4000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carruselt>div {
+    float: left;
+    height: 302px;
+    margin-right: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.carruselt img {
+    cursor: pointer;
+}
+
+.productt {
+    border: #f7f2f2 1px solid;
+}
+
+h2.titulo2t {
+    text-align: center;
+    margin: 80px 0 20px; /* Ajustar la posición del título */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+}
+/* Fin sección Tatiana*/
