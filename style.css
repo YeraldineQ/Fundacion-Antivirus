@@ -7,8 +7,6 @@
 }
 
 /*Tatiana Carrusel 1*/
-
-
 .containert {
     display: flex;
     flex-direction: column;
@@ -27,7 +25,7 @@
 
 
 #carruselt {
-    width: 905gir px;
+    width: 910px;
     overflow: hidden;
     height: 500px;
     position: relative;
@@ -72,7 +70,7 @@
     cursor: pointer;
 }
 
-.productt {
+.product {
     border: #f7f2f2 1px solid;
 }
 

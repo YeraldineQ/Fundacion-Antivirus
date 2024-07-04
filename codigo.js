@@ -15,7 +15,7 @@ $(document).ready(function() {
             current = numImages - 3;
         }
 
-        $(".carruselt").animate({"left": -($('#productt'+current).position().left)}, 600);
+        $(".carruselt").animate({"left": -($('#product_'+current).position().left)}, 600);
 
         return false;
     });
@@ -39,7 +39,7 @@ $(document).ready(function() {
             current = 0;
         }
 
-        $(".carruselt").animate({"left": -($('#productt'+current).position().left)}, 600);
+        $(".carruselt").animate({"left": -($('#product_'+current).position().left)}, 600);
 
         return false;
     });
