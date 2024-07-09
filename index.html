@@ -38,7 +38,7 @@
       </ul>
      
       <!--Botones de inicio de sesión y registro-->
-        <div class="log-buttons">
+        <div class="container-fluid log-buttons">
           <a class="btn"><button>Ingresa</button></a>
           <a class="btn"><button>Regístrate</button></a>
         </div>        
@@ -68,20 +68,21 @@
         </div>
 
       <!-- Inicio sección futuro -->
-      <main class="main-futuro">
-        <div class="col-md-6 datos-futuro">
-            <h1 class="titulo-futuro">¡Tú fúturo inicia aquí!</h1>
-            <p class="parrafo-futuro">
-                En la fundación Antivirus para la Deserción creemos que cada persona merece acceso a las mejores oportunidades. Por eso, ofrecemos una plataforma personalizada donde puedes explorar becas, cursos y programas adaptados a tus intereses.</p>
-        
-        <div>
-            <button type="button" class="btn-btn-futuro">Contáctanos</button>
-            <a href="">Conoce sobre nosotros</a>
-        </div>
-            
-        </div>
-        <div class="col-md-5"> 
-            <img class="img-futuro" src="img/banco.png">
+      <main class="container my-5 main-futuro">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-1">
+                <h1 class="titulo-futuro">¡Tu futuro inicia aquí!</h1>
+                <p class="parrafo-futuro">
+                    En la Fundación Antivirus para la Deserción creemos que cada persona merece acceso a las mejores oportunidades. Por eso, ofrecemos una plataforma personalizada donde puedes explorar becas, cursos y programas adaptados a tus intereses y necesidades.
+                </p>
+                <div class="mt-4">
+                    <button type="button" class="btn btn-warning me-2 btn-futuro" >Contáctanos</button>
+                    <a href="#" class="btn btn-outline-secondary btn-futuro">Conoce sobre nosotros</a>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-2 text-center">
+                <img src="img/banco.png" class="img-fluid img-futuro" alt="Imagen de futuro">
+            </div>
         </div>
     </main>
        <!-- Fin sección futuro -->
@@ -145,8 +146,7 @@
  <!-- Acá termina sección servicios -->
 
 
-  <script src="navbar.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
   
   <footer>
     <div class="footer-container">
@@ -211,6 +211,10 @@
         </div>
       </div>
     </div>
-  </footer>  
+  </footer> 
+
+  <script src="js/navbar.js"></script>
+  <script src="js/futuro.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
