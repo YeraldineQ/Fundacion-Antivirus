@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+/*Tatiana Carrusel 1*/
+
+    
+.t-oportunidades {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #222d56;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 50px;
+    justify-content: center;
+
+}
+.card-img-top {
+    height: 250px; /* Ajustar la altura de la imagen */
+    object-fit: cover; /* Mantener el aspecto de la imagen */
+}
+
+.title-cuerpo{
+    font-size: 25px;
+    font-family: "Verdana";
+    text-align: left;
+
+  }
+  .cuerpo-carrusel {
+    text-align: left;
+  }
+ 
+    
+
+
+
+
+/*fin Tatiana Carrusel 1*/
