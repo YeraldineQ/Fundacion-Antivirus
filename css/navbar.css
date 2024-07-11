@@ -50,6 +50,12 @@
 
 
 }
+.nav-links {
+    display: flex;
+    align-self: center;
+    color: white;
+   
+}
 
 @media screen and (max-width: 769px){
     .nav__toggle{
@@ -102,7 +108,7 @@
         flex-direction: column;
         gap: 1.5rem;
         margin-top: 2rem;
-        color: black;
+        color: #222D56;
     }
 
      header .nav-links ul li a{
@@ -111,13 +117,6 @@
     }
 }
 
-
-.nav-links {
-    display: flex;
-    align-self: center;
-    color: white;
-   
-}
 
 .menu {
     margin-top: 12px;
@@ -228,7 +227,7 @@
     padding: 10px;
     display: grid;
     place-content: center;
-    z-index: 0;
+    z-index: -1;
     max-width: 300px;
     margin: 10px 10px;
 }
