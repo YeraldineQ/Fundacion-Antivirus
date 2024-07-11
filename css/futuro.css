@@ -15,9 +15,10 @@ body p {
 .titulo-futuro {
     font-family: 'Impact', sans-serif;
     font-size: 3.5rem;
-    font-weight: bold;
+   font-size: 70px;
     color: #222D56;
     margin-bottom: 1rem;
+    
 }
 
 .parrafo-futuro {
@@ -84,13 +85,15 @@ body p {
         margin: 20px;
     }
 
-    .titulo-futuro, .parrafo-futuro, .btn-btn-futuro {
-        width: 100%;
+    .titulo-futuro {
+
         text-align: center;
-    }
+    } 
 
     .parrafo-futuro {
         margin-bottom: 20px;
+        text-align:left;
+        font-size: 20px;
     }
 
     .img-futuro {
@@ -99,6 +102,15 @@ body p {
         height: auto;
         margin-top: 25px;
     }
+
+    .btn-cc{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px 0;
+    }
 }
+
+
    
 /*TEMINA SECCIÓN FÚTURO*/
