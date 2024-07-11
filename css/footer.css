@@ -34,7 +34,8 @@
   }
   
   .social-link:hover {
-  background-color: #e89106;
+    cursor: pointer;
+  background-color: #32526E;
   }
   
   .social-link {
@@ -114,6 +115,8 @@
   cursor: pointer;
   font-size: 14px;
   }
+
+
   
   .subscription-form button:hover {
   background-color: #e89106;
@@ -156,19 +159,18 @@
     font-size: 11px; /* Ajustar este valor según necesidades */
   }
   
-  .whatsapp {
-    display: flex;
-    align-items: center;
-  }
+.email-footer, .whatsapp-footer{
+display: flex;
+gap: 0 10px;
+}
+
+.p-footer{
+  padding-top: 5px;
+}
+
+
   
-  .email {
-    display: flex;
-    align-items: center;
-  }
   
-  .email i {
-    margin-right: 11px; /* Ajustar este valor según necesidades */
-  }
   
   /* Estilos para pantallas pequeñas (móviles) */
   @media (max-width: 767px) {
@@ -190,10 +192,6 @@
       width: 100%;
     }
   
-    .email,
-    .whatsapp {
-      justify-content: center;
-    }
   
     .subscription-section {
       width: 100%;
@@ -220,10 +218,7 @@
       width: 100%;
     }
   
-    .email,
-    .whatsapp {
-      justify-content: center;
-    }
+
   
     .subscription-section {
       width: 100%;
@@ -247,11 +242,6 @@
       width: 55%;
     }
   
-    .email,
-    .whatsapp {
-      display: flex;
-      align-items: center;
-    }
   
     .subscription-section {
       width: 100%;
