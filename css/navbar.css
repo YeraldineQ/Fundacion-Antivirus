@@ -54,11 +54,16 @@
     display: flex;
     align-self: center;
     color: white;
+    >li>a {
+        color:white;
+        text-decoration: none;
+    }
    
 }
 
 @media screen and (max-width: 769px){
     .nav__toggle{
+        z-index: 40;
         display: block;
         font-size: 2rem;
         cursor: pointer;
@@ -85,6 +90,7 @@
     position: fixed;
     flex-direction: column;
     top: 0;
+    z-index: 30;
     right: -100%;
     background-color: hsla(0, 0%, 100%, .1);
     backdrop-filter: blur(16px);
@@ -109,6 +115,9 @@
         gap: 1.5rem;
         margin-top: 2rem;
         color: #222D56;
+        >li> a {
+            color: #222D56
+        }
     }
 
      header .nav-links ul li a{
@@ -138,7 +147,7 @@
     transform: scale(1.1);
 }
 
-.header .nav-links a {
+.header .nav-links {
     font-size: 700;
     color: #DCEBF9;
     text-decoration: none;
@@ -227,7 +236,6 @@
     padding: 10px;
     display: grid;
     place-content: center;
-    z-index: -1;
     max-width: 300px;
     margin: 10px 10px;
 }

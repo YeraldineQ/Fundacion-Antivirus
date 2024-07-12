@@ -43,9 +43,9 @@
 
     <nav class="nav-bar" id="nav-bar">
       <ul class="nav-links">
-          <li><a href="#inicio"></a>Inicio</li>
-          <li><a href="#oportunidades"></a>Oportunidades</li>
-          <li><a href="#servicios"></a>Servicios</li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#oportunidades">Oportunidades</a></li>
+          <li><a href="#servicios">Servicios</a></li>
           
       </ul>
      
@@ -80,24 +80,30 @@
         </div>
 
       <!-- Inicio sección futuro -->
-      <main class="container my-5 main-futuro" id="inicio">
-        <div class="row align-items-center">
-            <div class="col-md-6 order-md-1">
-                <h1 class="titulo-futuro">¡Tu futuro inicia aquí!</h1>
-                <p class="parrafo-futuro">
-                    En la Fundación Antivirus para la Deserción creemos que cada persona merece acceso a las mejores oportunidades. Por eso, ofrecemos una plataforma personalizada donde puedes explorar becas, cursos y programas adaptados a tus intereses y necesidades.
-                </p>
-                <div class="mt-4 btn-cc">
-                    <button type="button" class="btn btn-warning me-2 btn-futuro" >Contáctanos</button>
-                    
-                    <a href="https://www.fundacionantivirusparaladesercion.org/fundacion" target="_blank" class="btn btn-outline-secondary btn-futuro">Conoce sobre nosotros</a>
-                </div>
+      <main class="main-futuro">
+        <div class="col-md-6 datos-futuro">
+            <h1 class="titulo-futuro">¡Tu futuro inicia aquí!</h1>
+            <p class="parrafo-futuro">En la fundación Antivirus para la Deserción creemos que cada persona merece acceso a las mejores oportunidades. Por eso, ofrecemos una plataforma personalizada donde puedes explorar becas, cursos y programas adaptados a tus intereses.</p>
+          
+          <div class="btn-group">
+            <button id="btn-abrir-modal" class="btn btn-primary">Contáctanos</button>
+            <a href="https://www.fundacionantivirusparaladesercion.org/fundacion" target="_blank" class="btn btn-outline-secondary btn-futuro">Conoce sobre nosotros</a>
+          </div>
+                <dialog id="modal-futuro">
+                    <h2 class= "modalp-futuro"> ¡Hola!, deja tus datos de contacto aquí</h2>
+                    <form id="contacto-form">
+                        <label> Nombre <input type="text" name="nombre" required></label><br>
+                        <label> Correo <input type="email" name="correo" required></label><br>
+                        <label> Número de contacto <input type="tel" name="contacto" required></label><br>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                        <button type="button" id="btn-cerrar-modal" class="btn btn-secondary">Cerrar</button>
+                    </form>
+                </dialog>
             </div>
-            <div class="col-md-6 order-md-2 text-center">
-                <img src="img/banco.png" class="img-fluid img-futuro" alt="Imagen de futuro">
+            <div class="col-md-5"> 
+                <img class="img-futuro" src="img/banco.png" alt="Imagen">
             </div>
-        </div>
-    </main>
+        </main>
        <!-- Fin sección futuro -->
 
         <!-- inicio sección oportunidades -->
