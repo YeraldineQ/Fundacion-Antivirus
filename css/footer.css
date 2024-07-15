@@ -114,7 +114,7 @@
 }
 
   .footer-container {
-    background-color: #222D56;
+    height: 600px;
     color: #fff;
     display: flex;
     justify-content: space-around;
