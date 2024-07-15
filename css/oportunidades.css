@@ -8,6 +8,16 @@
 
 /*Tatiana Carrusel 1*/
 
+.card-oportunidades{
+  width: 95%;
+}
+
+.card-oportunidades{
+  height: 9.5rem;
+}
+
+
+
 .t-oportunidades {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #222d56;
@@ -23,19 +33,29 @@
     object-fit: cover; /* Mantener el aspecto de la imagen */
 }
 
+
 .title-cuerpo{
-    font-size: 25px;
-    font-family: "Verdana";
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #222d56;
     text-align: left;
+    padding: 20px 25px 0;
+    
 
   }
   .cuerpo-carrusel {
     text-align: left;
+    padding: 0 25px 20px;
   }
  
     
 
-
+@media screen and (max-width: 1026px){
+  .card-oportunidades{
+    height: 11rem;
+  }
+  
+}
 
 
 /*fin Tatiana Carrusel 1*/

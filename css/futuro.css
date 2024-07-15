@@ -13,9 +13,9 @@
      background-color: white;
      display:flex;
      justify-content: space-between;
-     margin: 200px 30px 200px 300px;
-     gap: 0px;
-     opacity: 0px;
+     align-items: center;
+     margin: 120px 30px 120px 300px;
+     
  }
 
 
