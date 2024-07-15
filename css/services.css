@@ -29,15 +29,17 @@ color: #222d56;
     padding: 2em;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     font-weight: 100;
-    background-image: linear-gradient(to right bottom, #1d00ff, #a500f7);
+    background-image: linear-gradient(to right bottom, #32526E, #32526E);
 }
 
 .boton-service{
     display: flex;
     align-items: center;
     justify-content: center;
+    
   
 }
+
 
 .card-text{
     color: white;

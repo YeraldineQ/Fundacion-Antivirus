@@ -91,6 +91,7 @@
   }
   
   .subscription-form {
+    width: 17rem;
   display: flex;
   align-items: center;
   margin-top: 10px;
@@ -100,28 +101,18 @@
   flex: 1;
   padding: 10px;
   border: none;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
   background-color: #f2f2f2;
   color: #333;
   font-size: 14px;
   }
-  
-  .subscription-form button {
-  padding: 10px 20px;
-  background-color: #FAA307;
-  color: white;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 14px;
-  }
 
+  form button[type="submit"] {
+    background-color: #FFBA08;
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+}
 
-  
-  .subscription-form button:hover {
-  background-color: #e89106;
-  }
-  
   .footer-container {
     background-color: #222D56;
     color: #fff;
@@ -135,7 +126,7 @@
   }
   
   .footer-section h4 {
-    border-bottom: 2px solid #555;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 10px;
   }
   
