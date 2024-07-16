@@ -52,10 +52,17 @@
 
 @media screen and (max-width: 1026px){
   .card-oportunidades{
-    height: 11rem;
+    height: 12rem;
   }
   
 }
+
+
+@media (max-width: 767px) {
+  .t-oportunidades {
+    font-size: 55px;
+}
+  }
 
 
 /*fin Tatiana Carrusel 1*/
