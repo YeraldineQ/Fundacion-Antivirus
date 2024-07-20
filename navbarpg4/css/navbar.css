@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo del header con gradiente */
+.header {
+  background: linear-gradient(to right, #2C395B, #ADD6FF);
+  padding: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal del navbar */
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+/* Sección izquierda del navbar */
+.left-section {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.left-section .logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.left-section .logo img {
+  height: 130px;
+  width: auto;
+}
+
+/* Sección central del navbar */
+.center-section {
+  width: 50%;
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FFBA08;
+}
+
+/* Sección derecha del navbar */
+.right-section {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right-section .user-info-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Asegura que los elementos dentro de este contenedor se alineen a la derecha */
+}
+
+.user-info {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.user-info span {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.status {
+  background-color: #2C9BC7;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-weight: bold; /* Texto en negrilla */
+  text-align: center; /* Texto centrado */  
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.logout-button .logout-icon {
+  height: 24px;
+  margin-right: 5px;
+}
+
+.logout-button button {
+  background-color: #FAA307;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s;
+}
+
+.logout-button button:hover {
+  background-color: #FF9F00;
+}
+
+/* Contenedor de la foto del usuario */
+.user-photo {
+  width: 80px; /* Ajusta el tamaño del contenedor según sea necesario */
+  height: 80px; /* Ajusta el tamaño del contenedor según sea necesario */
+  border-radius: 50%; /* Hace el contenedor circular */
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+}
+
+.user-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .nav-main {
+      flex-direction: column;
+      padding: 0;
+  }
+
+  .left-section, .center-section, .right-section {
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+  }
+
+  .nav-links {
+      flex-direction: column;
+  }
+
+  .user-info {
+      align-items: center;
+  }
+}
+
+/* busqueda */
+.container {
+  position: relative;
+  border-radius: 1000px;
+  padding: 10px;
+  display: grid;
+  place-content: center;
+  z-index: 0;
+  max-width: 300px;
+  margin: 10px 10px;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  border-radius: 50px;
+  background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container::after, .search-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  position: absolute;
+}
+
+.search-container::before {
+  top: -1px;
+  left: -1px;
+  background: linear-gradient(0deg, rgb(218, 232, 247) 0%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+}
+
+.search-container::after {
+  bottom: -1px;
+  right: -1px;
+  background: linear-gradient(0deg, rgb(163, 206, 255) 0%, rgb(211, 232, 255) 100%);
+  box-shadow: rgba(79, 156, 232, 0.7019607843) 3px 3px 5px 0px, rgba(79, 156, 232, 0.2) -3px -3px 7px 1px inset;
+  z-index: -1;
+}
+
+.search-container .input {
+  font-size: 1rem;
+  color: #777;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 10px;
+  height: 50px;
+  flex: 1;
+}
+
+.search-container .search__icon {
+  height: 2rem;
+  width: 2rem;
+  fill: #FFF;
+  padding: 10px;
+  border-radius: 50%;
+  background: #559EFF;
+}
