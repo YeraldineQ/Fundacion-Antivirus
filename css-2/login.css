@@ -1,0 +1,110 @@
+/* body {
+    background-color: #DCEBF9;
+} */
+
+/* styles.css */
+.fw-bold {
+    color: #32526E;
+}
+
+/* Estilo de la tarjeta de login */
+.login-card {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Estilo del botón de Google */
+.google-btn {
+    background: linear-gradient(to right, #FFBA08, #ffcc4d);
+    color: white;
+    transition: background 0.3s;
+}
+
+.google-btn:hover { 
+    background: linear-gradient(to right, #ffcc4d, #FFBA08);
+}
+
+/* Estilo del botón de Facebook */
+.facebook-btn {
+    background: linear-gradient(to right, #32526E, #466b92);
+    color: white;
+    transition: background 0.3s;
+}
+
+.facebook-btn:hover {
+    background: linear-gradient(to right, #466b92, #32526E);
+}
+
+/* Estilo del botón de login */
+.login-btn {
+    background: linear-gradient(to right, #222D56, #39407f);
+    color: white;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, #39407f, #222D56);
+}
+
+/* Estilo de los grupos de formularios */
+.position-relative {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo del input de contraseña */
+input[type="password"].form-control {
+    padding: 10px;
+    padding-right: 40px; /* Espacio adicional para el icono */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Asegura que el input tome el ancho completo del contenedor */
+}
+
+/* Estilo del icono de visibilidad de la contraseña */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Estilos de texto */
+.text-primary {
+    color: #32526E;
+}
+
+.text-secondary {
+    color: #708BC6;
+}
+
+/* Estilo de la imagen fluida */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo de la imagen de Javi */
+.javi-img {
+    width: 75%;
+    max-width: 400px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .login-card {
+        margin-top: 20px;
+    }
+    .container {
+        flex-direction: column-reverse;
+    }
+    .javi-img {
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+}

@@ -7,41 +7,41 @@
 }
 
 /*SECCIÓN FÚTURO MELISA-INICIO*/
+.main-futuro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px 200px;
+}
 
 
- .main-futuro{
-     background-color: white;
-     display:flex;
-     justify-content: space-between;
-     align-items: center;
-     margin: 120px 30px 120px 300px;
-     
- }
-
-
- .titulo-futuro{
+.titulo-futuro {
     font-family: 'Impact', sans-serif;
     font-size: 3.5rem;
     font-size: 70px;
     color: #222D56;
     margin-bottom: 1rem;
- }
-
- .parrafo-futuro{
-     color:#222D56;
-     font-family:'Acumin Variable Concept', sans-serif;
-     font-size: 25px;
-     text-align: justify;
- }
-
- /*COMIENZA LA VENTANA MODAL*/
-
-.modalp-futuro { color:#222D56;
-    font-family:'Acumin Variable Concept', sans-serif;
-    text-align: center;
+    margin-top: 50px;
 }
 
- #btn-abrir-modal {
+.parrafo-futuro {
+    color: #222D56;
+    font-family: 'Acumin Variable Concept', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/*COMIENZA LA VENTANA MODAL*/
+
+.modalp-futuro {
+    color:#222D56;
+    font-family: 'Acumin Variable Concept', sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#btn-abrir-modal {
     background-color: #FFBA08;
     color: #fff;
     border: 1px solid;
@@ -53,12 +53,12 @@
 }
 
 #btn-abrir-modal:hover {
-    color:#FAA307 ;
-    background-color: #fff;;
+    color: #FAA307;
+    background-color: #fff;
 }
 
 dialog {
-    font-family:'Acumin Variable Concept', sans-serif;
+    font-family: 'Acumin Variable Concept', sans-serif;
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(61, 48, 48, 0.1);
@@ -67,7 +67,7 @@ dialog {
     width: 100%;
     position: relative;
     margin: auto;
-    position:fixed;
+    position: fixed;
     background: rgba(215, 217, 223, 0.9);
 }
 
@@ -82,6 +82,7 @@ form {
 }
 
 form label {
+    color: #222D56;
     width: 100%;
     max-width: 300px; /* Ajusta el ancho máximo */
     margin-bottom: 5px;
@@ -96,14 +97,13 @@ form input {
     margin-top: 3px;
 }
 
-form button[type="submit"] {
+#contacto-form button[type="submit"] {
     background-color: #222D56;
     color: white;
     border: none;
     padding: 10px; /* Aumenta el padding */
     font-size: 1em; /* Aumenta el tamaño de la fuente */
     cursor: pointer;
-    border: 1px solid;
     border-radius: 6px;
     display: inline-block;
     font-weight: 200;
@@ -113,10 +113,11 @@ form button[type="submit"] {
     margin-top: 10px;
 }
 
-form button[type="submit"]:hover {
-    color: #32526E;;
+#contacto-form button[type="submit"]:hover {
+    color: #32526E;
     background-color: #fff;
 }
+
 
 #btn-cerrar-modal {
     background-color: #FFBA08;
@@ -125,7 +126,6 @@ form button[type="submit"]:hover {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    border: 1px solid;
     border-radius: 6px;
     display: inline-block;
     transition: background-color 0.3s ease;
@@ -135,13 +135,8 @@ form button[type="submit"]:hover {
 }
 
 #btn-cerrar-modal:hover {
-    color:#FAA307 ;
+    color: #FAA307;
     background-color: #fff;
-}
-
-.img-futuro {
-    width: 75%;
-    height: auto;
 }
 
 a {
@@ -155,12 +150,25 @@ a:hover {
 
 /*TERMINA LA VENTANA MODAL*/
 
+.col-md-5 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
 .img-futuro {
-    width: 75%;
+    width: 500px;
     height: auto;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0;
     animation: fadeInMove 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 .btn-group {
@@ -168,28 +176,7 @@ a:hover {
     gap: 10px; /* Espacio entre los botones */
 }
 
-@keyframes fadeInMove {
-    0% {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.main-futuro {
-    opacity: 0;
-        animation: fadeIn 2s forwards;
-}  
-
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
+/* MEDIA QUERY GENERAL*/
 
 @media screen and (max-width: 800px) {
     .main-futuro {
@@ -199,13 +186,12 @@ a:hover {
     }
 
     .titulo-futuro {
-
         text-align: center;
-    } 
+    }
 
     .parrafo-futuro {
         margin-bottom: 20px;
-        text-align:left;
+        text-align: justify;
         font-size: 20px;
     }
 
@@ -213,21 +199,89 @@ a:hover {
         width: 100%;
         max-width: 300px;
         height: auto;
-        margin-top: 25px;
+        margin-top: 50px;
     }
 
-    .btn-group{
+    .btn-group {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         gap: 10px 0;
-        > button, a{
-            width: 50%;
-        }
+    }
+
+    .btn-group > button, .btn-group > a {
+        width: 50%;
     }
 }
 
- 
-/*TEMINA SECCIÓN FÚTURO*/
+/*MEDIA QUERY VENTANA MODAL
+/* Media queries para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    dialog {
+        max-width: 90%;
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    form label {
+        font-size: 0.9em;
+    }
+
+    form input {
+        font-size: 0.9em;
+    }
+
+    form button[type="submit"],
+    #btn-cerrar-modal {
+    font-size: 0.9em;
+    padding: 10px;
+   }
+
+
+}
+/* Media queries para pantallas medianas */
+@media screen and (max-width: 800px) {
+    dialog {
+        max-width: 80%;
+        padding: 18px;
+        font-size: 0.95em;
+    }
+
+    form label {
+        font-size: 0.95em;
+    }
+
+    form input {
+        font-size: 0.95em;
+    }
+
+    #btn-cerrar-modal {
+        font-size: 0.95em;
+        padding: 9px;
+    }
+}
+
+/* Media queries para pantallas grandes */
+@media screen and (min-width: 1200px) {
+    dialog {
+        max-width: 40%;
+        padding: 25px;
+        font-size: 1em;
+    }
+
+    form label {
+        font-size: em;
+    }
+
+    form input {
+        font-size: 1em;
+    }
+
+    form button[type="submit"],
+    #btn-cerrar-modal {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
