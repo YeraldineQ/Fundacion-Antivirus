@@ -1,6 +1,14 @@
-/* body {
-    background-color: #DCEBF9;
-} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    
+}
+
+.container-login{
+    margin: 50px 0;
+}
 
 /* styles.css */
 .fw-bold {

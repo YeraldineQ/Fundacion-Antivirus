@@ -33,6 +33,9 @@
 
 .title-beneficios{
     text-align: center;
+    font-weight: bold;
+    color: #222D56;
+    margin-top: 30px;
 }
 
 .container-beneficios {
@@ -40,7 +43,7 @@
     padding: 10px;
     display: grid;
     place-content: center;
-    margin: 10px 10px;
+    /* margin: 10px 10px; */
 }
 
 .container-beneficio{
@@ -48,4 +51,12 @@
     right: 4.89%;
     top: 54.36%;
     bottom: 37.27%;
+}
+
+.bi-check-circle-fill{
+    display: flex;
+    justify-content: center;
+    color: #32526E;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
