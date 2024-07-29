@@ -1,0 +1,55 @@
+.container-principal{
+    margin-top: 50px ;
+}
+
+
+.box-area {
+    max-width: 930px;
+    /* Ancho del contenedor principal */
+}
+
+.right-box {
+    padding: 40px 30px 40px 40px;
+    /* Padding de la columna derecha */
+}
+::placeholder {
+    font-size: 16px;
+    /* Tamaño de fuente del texto de placeholder */
+}
+
+
+.rounded-5 {
+    border-radius: 30px;
+    /* Bordes más redondeados */
+
+}
+
+/* Estilo del icono de visibilidad de la contraseña */
+
+.toggle-password {
+    cursor: pointer; 
+    position: absolute; /* Posiciona el icono dentro del input */
+    right: 15px; /* Espacio desde el borde derecho del input */
+    top: 50%; /* Centra verticalmente el icono */
+    transform: translateY(-50%); /* Ajusta el icono verticalmente */
+    z-index: 10; /* Asegura que el icono esté siempre visible */
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    .box-area {
+        margin: 0 10px;
+        /* Ajusta el margen del contenedor principal */
+    }
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+        /* Ajusta la altura y el desbordamiento del contenedor izquierdo */
+    }
+    .right-box {
+        padding: 20px;
+        /* Reduce el padding de la columna derecha */
+    }
+}

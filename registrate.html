@@ -7,9 +7,9 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
     <!-- Link Css no borrar-->
-     <link rel="stylesheet" href=""> <!--Kathe -->
-     <link rel="stylesheet" href=""><!--Tatiana -->
-     <link rel="stylesheet" href=""><!--Carol -->
+     <link rel="stylesheet" href="css-3/nav-pag3.css"> <!--Kathe -->
+     <link rel="stylesheet" href="css-3/style-registrarse.css"><!--Tatiana -->
+     <link rel="stylesheet" href="css-3/beneficios.css"><!--Carol -->
      <link rel="stylesheet" href=""><!--Yeral -->
 
      <!-- Link Bootstrap no borrar -->
@@ -24,24 +24,161 @@
     
 </head>
 <body>
+    <!-- Barra de navegación  -->
+<header class="header ">
+    <div class="nav-main container d-flex align-items-center">
+    <!--Logo fundación antivirus-->
+    <div class="logo">
+    <img src="img/Logo Fundación Antivirus.png" alt="Logo Fundación">
+    </div>
+     
+        <nav class="nav-bar" id="nav-bar">
+    <ul class="nav-links">
+    <li><a href="index.html#inicio">Inicio</a></li>
+    <li><a href="index.html#oportunidades">Oportunidades</a></li>
+    <li><a href="index.html#servicios">Servicios</a></li>
+    </ul>
+    <!--Botones de inicio de sesión y registro-->
+    <div class="container-fluid log-buttons">
+    <a href="login.html" class="btn"><button>Ingresa</button></a>
+    </div>        
+    </nav>
+     
+            <div class="nav__toggle" id="nav-toggle">
+    <i class="bx bx-menu" id="menu-button"></i>
+    </div>
+    </div>
+     
+        </header>
+    <!-- Fin barra de navegación -->
 
+    <!-- Barra de busqueda de oportunidades-->    
+
+    <div class="container ml-1">
+        <div class="search-container">
+          <input class="input" type="text" placeholder="Busca tu Próxima Oportunidad">
+          <svg viewBox="0 0 24 24" class="search__icon">
+            <g>
+              <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+              </path>
+            </g>
+          </svg>
+        </div>
+        </div>
+
+
+        <div class="container d-flex justify-content-center align-items-center container-principal">
+            <!-- Contenedor principal centrado tanto horizontal como verticalmente -->
+            <div class="row bg-white p-4 rounded-3 shadow box-area">
+                <!-- Fila con borde, esquinas redondeadas, padding, fondo blanco -->
+                <div class="col-md-6 box-right">
+                    <!-- Columna derecha (formularios) -->
+                    <div class="text-center mb-4">
+                        <!-- Contenedor del texto del encabezado -->
+                        <h4>¿Preparado para encontrar tu próxima 
+                            <span style="color: #222D56; font-size: 30px; font-weight: bold;">oportunidad?</span> 
+                            <img src="./img/img-registrarse/mano.png" style="width: 35px;" class="ms-2" alt="Mano">
+                        </h4>
+                    </div>
+                    
+                    <!-- Botones de inicio de sesión -->
+                    <div class="input-group mb-3">
+                        <button class="btn btn-lg btn-light w-100 fs-6">
+                            <img src="./img/img-registrarse/google.png" style="width: 20px;" class="me-2" alt="Google">
+                            <small>Iniciar sesión con Google</small>
+                        </button>
+                    </div>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-lg btn-light w-100 fs-6">
+                            <img src="./img/img-registrarse/facebook.png" style="width: 20px;" class="me-2" alt="Facebook">
+                            <small>Iniciar sesión con Facebook</small>
+                        </button>
+                    </div>
+                    <div class="text-center my-3"> o </div>
     
+                    <!-- Campos de formulario -->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-address-card"></i></span>
+                        <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Nombre">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-address-card"></i></span>
+                        <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Apellido">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-cake-candles"></i></span>
+                        <input type="date" class="form-control form-control-lg bg-light fs-6" placeholder="Fecha de nacimiento">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" class="form-control form-control-lg bg-light fs-6" placeholder="Correo electrónico">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Contraseña">
+                        <span id="toggle-password-1" class="toggle-password">👁️</span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-key"> </i></span>
+                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Confirma tu contraseña">
+                        <span id="toggle-password-2" class="toggle-password">👁️</span>
+                    </div>
+                    
+                    <!-- Botón de crear cuenta -->
+                    <div class="input-group mb-2">
+                        <button style="background-color: #FFBA08; border-color: #FFBA08;" class="btn btn-lg btn-primary w-100 fs-6">Crear cuenta</button>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center flex-column ">
+                    <!-- Columna izquierda con esquinas redondeadas, centrado de contenido y fondo blanco -->
+                    <div class="featured-image mb-3">
+                        <img src="./img/img-registrarse/img-cohete.png" class="img-fluid" style="width: 350px;" alt="Imagen destacada">
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-    
-
-
-
-
-
-
-
-
+        <section>
+        <div class="container-beneficios">
+            <h2 class="title-beneficios">Obten los suguientes beneficios</h2>
+            <div class="container-fuid px-4 py-5" id="hanging-icons">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                    <div class="col d-flex align-items-start ">
+                    <div class="container-beneficio">
+                        <h4 class="fw-bold mb-0 beneficios">Registro y creación del perfil personal</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente est id repellat possimus excepturi dolorum magni quisquam consequatur, iusto porro, quibusdam eos molestiae illo neque a omnis atque perspiciatis veniam.</p>
+                    </div>
+                    </div>
+                    <div class="col d-flex align-items-start ">
+                    <div class="container-beneficio">
+                        <h4 class="fw-bold mb-0 beneficios">Guardar oportunidades</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente est id repellat possimus excepturi dolorum magni quisquam consequatur, iusto porro, quibusdam eos molestiae illo neque a omnis atque perspiciatis veniam.</p>
+                    </div>
+                    </div>
+                    <div class="col d-flex align-items-start ">
+                    <div class="container-beneficio">
+                        <h4 class="fw-bold mb-0 beneficios">Recomendaciones personalizadas</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente est id repellat possimus excepturi dolorum magni quisquam consequatur, iusto porro, quibusdam eos molestiae illo neque a omnis atque perspiciatis veniam.</p>
+                    </div>
+                    </div>
+                    <div class="col d-flex align-items-start ">
+                    <div class="container-beneficio">
+                        <h4 class="fw-bold mb-0 beneficios">Contenido exclusivo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente est id repellat possimus excepturi dolorum magni quisquam consequatur, iusto porro, quibusdam eos molestiae illo neque a omnis atque perspiciatis veniam.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section >
 
 
 
 <!-- No borrar Link JS -->
+    <script src="script-registrarse.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="js-3/nav-3.js"></script>
 </body>
 </html>

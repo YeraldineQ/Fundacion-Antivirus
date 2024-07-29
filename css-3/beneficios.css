@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ .beneficios{
+    color: #FAA307;
+
+    /* height: 30px; */
+    left: 0px;
+    right: 0px;
+    top: 50px;
+
+    /* font-family: 'Raleway'; */
+    /* font-style: normal; */
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 100% */
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+
+ }
+
+.text-beneficios{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    color: #5D6970;
+    border: 1px solid #000000;
+}
+
+.title-beneficios{
+    text-align: center;
+}
+
+.container-beneficios {
+    position: relative;
+    padding: 10px;
+    display: grid;
+    place-content: center;
+    margin: 10px 10px;
+}
+
+.container-beneficio{
+    left: 51.85%;
+    right: 4.89%;
+    top: 54.36%;
+    bottom: 37.27%;
+}
