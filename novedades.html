@@ -9,7 +9,7 @@
     <!-- Link Css no borrar-->
      <link rel="stylesheet" href="css-4/navbar-4.css"> <!--David -->
      <link rel="stylesheet" href="css-4/novedades.css"><!--Carolina -->
-     <link rel="stylesheet" href=""><!-- Acá van los estilos de filtrar--> 
+     <link rel="stylesheet" href="css-4/busquedaoportunidades.css"><!--Melisa -->
      <link rel="stylesheet" href=""><!-- Acá van los estilos de las card-->
 
      <!-- Link Bootstrap no borrar -->
@@ -69,7 +69,7 @@
     <!-- Fin  de Navbar -->
 
   <!-- Barra de busqueda de oportunidades-->    
-    <div class="container ml-1">
+    <div class="container mt-4 mb-5">
     <div class="search-container">
       <input class="input" type="text" placeholder="Busca tu Próxima Oportunidad">
       <svg viewBox="0 0 24 24" class="search__icon">
@@ -89,6 +89,57 @@
 
 
  <!-- Inicio Filtro de búsqueda -->
+ <div class="container date-filter-container">
+  <form class="filtrar-b d-flex gap-3 align-items-center" role="search">
+    <div class="input-group date-filter">
+      <span class="input-group-text" id="basic-addon1">Filtra tu búsqueda:</span>
+      <input type="date" class="form-control" id="start-date" aria-label="Fecha de inicio" placeholder="Fecha de inicio">
+      <input type="date" class="form-control" id="end-date" aria-label="Fecha de fin" placeholder="Fecha de fin">
+    </div>
+  </form>
+
+  <div class="container d-flex gap-3 align-items-center mt-3 filter-options-container">
+    <div class="input-group mb-3">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Seleccionar ubicación">
+        Ubicación
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Medellín</a></li>
+        <li><a class="dropdown-item" href="#">Bello</a></li>
+        <li><a class="dropdown-item" href="#">Itaguí</a></li>
+      </ul>
+      <input type="text" class="form-control" aria-label="Texto con botón de selección de ubicación" placeholder="Introduce ubicación">
+    </div>
+    <div class="input-group mb-3">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Seleccionar tipo de oportunidad">
+        Tipo de Oportunidad
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="#">Trabajo</a></li>
+        <li><a class="dropdown-item" href="#">Voluntariado</a></li>
+        <li><a class="dropdown-item" href="#">Prácticas</a></li>
+      </ul>
+      <input type="text" class="form-control" aria-label="Texto con botón de selección de tipo de oportunidad" placeholder="Introduce tipo de oportunidad">
+    </div>
+    <div class="input-group mb-3">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Seleccionar sector">
+        Sector
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+        <li><a class="dropdown-item" href="#">Tecnología</a></li>
+        <li><a class="dropdown-item" href="#">Salud</a></li>
+        <li><a class="dropdown-item" href="#">Educación</a></li>
+      </ul>
+      <input type="text" class="form-control" aria-label="Texto con botón de selección de sector" placeholder="Introduce sector">
+    </div>
+    <div>
+      <button type="button" class="boton-busqueda">Búsqueda</button>
+    </div>
+    <div>
+      <button type="button" class="boton-limpiar">Limpiar</button>
+    </div>
+  </div>
+</div>
 
  <!-- Fin Filtro de búsqueda -->
 
@@ -97,9 +148,6 @@
  <!-- Inicio Card Oportunidades -->
 
 <!-- Fin Card Oportunidades -->
-
-
-
 
 
   <!-- No borrar link JS -->
