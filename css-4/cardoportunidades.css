@@ -1,0 +1,80 @@
+.card-body-oportunidades {
+    padding: 25px;
+    margin-top: -15px;
+}
+
+.btn-primary {
+    border-radius: 50px;
+    width: 120px;
+    text-align: right;
+}
+
+.primary-btn {
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFBA08;
+}
+
+.primary-btn:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #222d56;
+}
+
+.text-card-h5-op{
+    color: #222D56;
+    text-align: left;
+}
+
+.boton-card {
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color:   #32526E;
+    border-radius: 22px;
+    font-weight: bold;
+    color: #32526E;
+    padding: 6px 12px 6px 12px;
+    background-color: white;
+}
+.boton-card:hover{
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFBA08;
+    border-radius: 22px;
+    font-weight: bold;
+    color: #FFBA08;
+}
+
+.text-center{
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #222d56;
+    text-align: center;
+    padding: 20px 25px 0;
+    margin-top: 150px;
+}
+
+.card-oportunidades{
+    width: 500px;
+    border-radius: 15px; /* Ajusta este valor para redondear los bordes de las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en la parte inferior */
+}
+
+
+
+.img-card {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+/* Hacer las imágenes responsivas y ajustar su altura */
+.card-oportunidades .img-card {
+height: 200px; /* Ajusta la altura según sea necesario */
+object-fit: cover; /* Ajusta la imagen para que cubra el contenedor manteniendo su proporción */
+width: 100%;
+}
+       
+

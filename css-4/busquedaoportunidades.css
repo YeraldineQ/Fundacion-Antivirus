@@ -1,0 +1,126 @@
+/* Estilos para el contenedor de filtros de fecha */
+.container.date-filter-container {
+    background-color:#f5f5f5;
+    margin-top: 80px;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+
+
+  .form-control {
+    width: 100px;
+    max-width: 250px;
+    
+  }
+  
+  /* Estilos para el contenedor de opciones de búsqueda */
+  .filter-options-container {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px; 
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilo para botones dentro del contenedor de opciones de búsqueda */
+  .filter-options-container .btn {
+    margin-right: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .filter-options-container .boton-busqueda{
+    background-color: #ff9800;
+    color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 7px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave */
+  }
+  
+  .filter-options-container .boton-busqueda:hover {
+    background-color: #fff;
+    color: #FFBA08;
+    border-color: #FFBA08;
+  }
+
+  .filter-options-container .boton-limpiar{
+    background-color:#222D56;
+    color: #ffffff;
+    border: 2px solid transparent; 
+    border-radius: 8px;
+    padding: 7px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .filter-options-container .boton-limpiar:hover {
+    background-color: #fff;
+    color: #222D56;
+    border-color: #222D56;
+  }
+
+  #resultado-intr-ubica,
+  #resultado-intr-oportun,
+  #resultado-intr-sect {
+    color: #222D56;
+    font-weight: bold;
+  }
+
+  .eliminar {
+    color:#FFBA08; /* Cambia el color de la "X" */
+    font-size: 25px; /* Cambia el tamaño de la "X" */
+    cursor: pointer;
+    margin-left: 5px;
+    transition: color 0.3s ease; /* Animación de transición para el cambio de color */
+}
+
+.eliminar:hover {
+    color: #222D56; /* Cambia el color al pasar el mouse sobre la "X" */
+}
+
+
+/* MEDIA QUERY PANTALLAS MEDIANAS*/
+  @media (max-width: 768px) {
+    .date-filter-container {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    .filter-options-container {
+      flex-direction: column;
+      gap: 3px;
+    }
+}
+  
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 576px) {
+    .filter-options-container {
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+  }
+
+  .input-group {
+    width: 100%;
+  }
+    
+  .input-group button,
+  .input-group input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .input-group .dropdown-menu {
+    width: 100%;
+  }
+  
+  .boton-busqueda,
+  .boton-limpiar {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
